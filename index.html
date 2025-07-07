@@ -218,10 +218,30 @@
     .nes-btn.youtube { background: #ff0000; }
     .nes-btn.instagram { background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af); color: #fff; }
     .nes-btn.x { background: #000000; }
+    .nes-btn.discord { background: #5865f2; }
+    .nes-btn.facebook { background: #1877f2; }
+    .nes-btn.telegram { background: #0088cc; }
+    .nes-btn.bluesky { background: #0285ff; }
+    .nes-btn.threads { background: #000000; }
+    .nes-btn.reddit { background: #ff4500; }
+    .nes-btn.snapchat { background: #fffc00; color: #000; }
+    .nes-btn.tiktok { background: #000000; }
+    .nes-btn.kick { background: #00ff00; }
+    .nes-btn.trovo { background: #00cc00; }
     .nes-btn.twitch:hover { background: #7f3ce6; box-shadow: 0 0 10px rgba(145, 70, 255, 0.7); }
     .nes-btn.youtube:hover { background: #cc0000; box-shadow: 0 0 10px rgba(255, 0, 0, 0.7); }
     .nes-btn.instagram:hover { box-shadow: 0 0 15px rgba(221, 42, 123, 0.7); }
     .nes-btn.x:hover { background: #333333; box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); }
+    .nes-btn.discord:hover { background: #4752c4; box-shadow: 0 0 10px rgba(88, 101, 242, 0.7); }
+    .nes-btn.facebook:hover { background: #145dbf; box-shadow: 0 0 10px rgba(24, 119, 242, 0.7); }
+    .nes-btn.telegram:hover { background: #006b9f; box-shadow: 0 0 10px rgba(0, 136, 204, 0.7); }
+    .nes-btn.bluesky:hover { background: #026fd4; box-shadow: 0 0 10px rgba(2, 133, 255, 0.7); }
+    .nes-btn.threads:hover { background: #333333; box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); }
+    .nes-btn.reddit:hover { background: #cc3700; box-shadow: 0 0 10px rgba(255, 69, 0, 0.7); }
+    .nes-btn.snapchat:hover { background: #e6e300; box-shadow: 0 0 10px rgba(255, 252, 0, 0.7); }
+    .nes-btn.tiktok:hover { background: #333333; box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); }
+    .nes-btn.kick:hover { background: #00cc00; box-shadow: 0 0 10px rgba(0, 255, 0, 0.7); }
+    .nes-btn.trovo:hover { background: #009900; box-shadow: 0 0 10px rgba(0, 204, 0, 0.7); }
 
     @keyframes buttonPress {
       0% { transform: scale(1); box-shadow: 0 8px 30px rgba(255, 255, 255, 0.3); }
@@ -282,6 +302,7 @@
       justify-content: center;
       gap: 10px;
       margin-top: 10px;
+      flex-wrap: wrap;
     }
 
     ul {
@@ -464,6 +485,31 @@
       font-weight: bold;
       font-size: 1.2rem;
       margin-bottom: 10px;
+    }
+
+    .crypto-address {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      border-radius: 8px;
+      font-family: monospace;
+      font-size: 0.9rem;
+      word-break: break-all;
+      margin: 10px 0;
+    }
+
+    .crypto-address button {
+      margin-left: 10px;
+      background: var(--accent);
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    .crypto-address button:hover {
+      background: #3b7acc;
     }
 
     @keyframes fadeIn {
@@ -709,7 +755,7 @@
       </div>
 
       <div class="text-center mt-8">
-        <a href="https://discord.gg/xwlasxd" target="_blank" class="nes-btn is-primary join"><i class="fas fa-users"></i> Join Discord</a>
+        <a href="https://joindiscord.me/@xwlasxd" target="_blank" class="nes-btn is-primary join"><i class="fas fa-users"></i> Join Discord</a>
         <a href="mailto:contact@xwlasxd.com" class="nes-btn is-primary join"><i class="fas fa-envelope"></i> Contact</a>
       </div>
     </div>
@@ -729,7 +775,67 @@
             <a href="https://youtube.com/@xwlasxd" target="_blank" class="nes-btn youtube"><i class="fab fa-youtube"></i></a>
             <a href="https://instagram.com/xwlasxd" target="_blank" class="nes-btn instagram"><i class="fab fa-instagram"></i></a>
             <a href="https://x.com/xwlasxd" target="_blank" class="nes-btn x"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://facebook.com/xwlasxd" target="_blank" class="nes-btn facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://joindiscord.me/@xwlasxd" target="_blank" class="nes-btn discord"><i class="fab fa-discord"></i></a>
+            <a href="https://t.me/xwlasxd" target="_blank" class="nes-btn telegram"><i class="fab fa-telegram"></i></a>
+            <a href="https://bsky.app/profile/xwlasxd.bsky.social" target="_blank" class="nes-btn bluesky"><i class="fas fa-cloud"></i></a>
+            <a href="https://threads.net/@xwlasxd" target="_blank" class="nes-btn threads"><i class="fas fa-thread"></i></a>
+            <a href="https://reddit.com/r/xwlasxd" target="_blank" class="nes-btn reddit"><i class="fab fa-reddit"></i></a>
+            <a href="https://snapchat.com/add/xwlasxd" target="_blank" class="nes-btn snapchat"><i class="fab fa-snapchat"></i></a>
+            <a href="https://tiktok.com/@xwlasxd" target="_blank" class="nes-btn tiktok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://kick.com/xwlasxd" target="_blank" class="nes-btn kick"><i class="fas fa-play"></i></a>
+            <a href="https://trovo.live/xwlasxd" target="_blank" class="nes-btn trovo"><i class="fas fa-stream"></i></a>
           </div>
+        </div>
+      </div>
+
+      <h3 class="text-center mt-8">Content Overview for Brands</h3>
+      <div class="grid">
+        <div class="card" data-animate="1">
+          <h3>IRL Variety Content</h3>
+          <p>xwlasxd streams daily, blending spiritual rituals, real-world adventures, and interactive community engagement. Examples include:</p>
+          <ul>
+            <li>Sacred Mantra Chanting sessions to inspire focus and positivity</li>
+            <li>Outdoor explorations with divine storytelling</li>
+            <li>Viewer-driven Q&A and Unity Ceremonies</li>
+            <li>Creative collabs with other creators across platforms</li>
+          </ul>
+          <p>Content is shared across Twitch, YouTube Shorts, TikTok, and Instagram for maximum reach.</p>
+        </div>
+      </div>
+
+      <h3 class="text-center mt-8">Streaming Schedule</h3>
+      <div class="grid">
+        <div class="card" data-animate="1">
+          <h3>Daily Streams</h3>
+          <p><strong>Time:</strong> 3:00 AM NZST (New Zealand Standard Time)</p>
+          <p><strong>Duration:</strong> 1 hour</p>
+          <p><strong>Platform:</strong> Primarily Twitch, with clips shared on YouTube, TikTok, and Instagram.</p>
+          <p>Join xwlasxd daily for a sacred hour of IRL variety content, designed to uplift and engage the global community.</p>
+        </div>
+      </div>
+
+      <h3 class="text-center mt-8">Support xwlasxd</h3>
+      <div class="grid">
+        <div class="card" data-animate="1">
+          <h3>Support the Sanctuary</h3>
+          <p>Support xwlasxd’s divine mission to reach 1,000,000 followers through subscriptions, bits, or cryptocurrency donations.</p>
+          <div class="social-links">
+            <a href="https://twitch.tv/xwlasxd/subscribe" target="_blank" class="nes-btn twitch"><i class="fas fa-star"></i> Subscribe on Twitch</a>
+            <a href="https://twitch.tv/xwlasxd" target="_blank" class="nes-btn twitch"><i class="fas fa-coins"></i> Donate Bits</a>
+            <a href="https://streamelements.com/xwlasxd/tip" target="_blank" class="nes-btn is-primary sponsor"><i class="fas fa-microphone"></i> TTS/Tips</a>
+          </div>
+          <p><strong>Bitcoin (BTC) Address:</strong></p>
+          <div class="crypto-address">
+            bc1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            <button onclick="copyToClipboard('bc1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')">Copy</button>
+          </div>
+          <p><strong>Ethereum (ETH) Address:</strong></p>
+          <div class="crypto-address">
+            0xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            <button onclick="copyToClipboard('0xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')">Copy</button>
+          </div>
+          <p><em>Please replace the placeholder addresses above with your actual BTC and ETH addresses.</em></p>
         </div>
       </div>
     </div>
@@ -808,6 +914,14 @@
           twitchBtn.innerHTML = '<i class="fab fa-twitch"></i>';
           twitchBtn.classList.remove('active');
         }
+      });
+    }
+
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Address copied to clipboard!');
+      }).catch(err => {
+        console.error('Failed to copy: ', err);
       });
     }
 
